@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Resume() {
+function ContactForm() {
   return (
     <div>     
     </div>
   );
 }
 
-export default Resume;
+export default ContactForm;

@@ -1,5 +1,6 @@
 import React from 'react';
 import profilePic from '../../assets/self/jeramy.jpg';
+
 function About() {
   return (
     <section className="my-5">
