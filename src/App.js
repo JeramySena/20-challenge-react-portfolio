@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from './components/About';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -15,12 +15,12 @@ function App() {
         <Header></Header> 
      
         <About></About>
-      <Routes>
-          <Route path = "/About" element={About}></Route>
-          <Route path = "/Projects" element={Projects}></Route>
-          <Route exact path = "/Contact" element={ContactForm}></Route>
-          <Route exact path = "/Resume" element={Resume}></Route>
-        </Routes>
+      <Switch>
+          <Route path = "/About" component={About}></Route>
+          <Route path = "/Projects" component={Projects}></Route>
+          <Route exact path = "/Contact" component={ContactForm}></Route>
+          <Route exact path = "/Resume" component={Resume}></Route>
+        </Switch>
         <Footer></Footer>
       </Router>
     </div>
