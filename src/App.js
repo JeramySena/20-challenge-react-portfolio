@@ -12,14 +12,13 @@ function App() {
   return (
     <div className="content">
       <Router>
-        <Header></Header> 
-     
-        <About></About>
+        <Header></Header>   
       <Switch>
           <Route path = "/About" component={About}></Route>
           <Route path = "/Projects" component={Projects}></Route>
           <Route exact path = "/Contact" component={ContactForm}></Route>
           <Route exact path = "/Resume" component={Resume}></Route>
+          <Route component={About}></Route>
         </Switch>
         <Footer></Footer>
       </Router>
